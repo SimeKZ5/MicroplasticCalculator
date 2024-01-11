@@ -1,7 +1,12 @@
-import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import LoginScreen from "./components/Login/LoginScreen";
 
 function App() {
-  return <div>Hi</div>;
+  return (
+    <Routes>
+      <Route path="/login" element={<LoginScreen />} />
+    </Routes>
+  );
 }
 
 export default App;
